@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('/public/font-family/minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    background-color: rgb(70, 70, 70);
+    font-family: 'minecraft', sans-serif;
+    font-size: 13px;
+}
+.title {
+    width: 30%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto
+}
+.err {
+    width: 15%;
+    margin-top: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

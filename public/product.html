@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<link rel="icon" src="/public/image/image.png" type="image/x-icon">
+<title>ProductShop</title>
+<link rel="stylesheet" href="/public/style/productHub.css">
+<link href="/public/script/script.js">
+<link href="/public/font-family/minecraft.ttf">
+  </head>
+  <body>
+<img class="title" src="/public/image/title.png">
+    <div class="details"></div>
+
+    <script>
+        async function getProductDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+
+                let response = await fetch(`https://dummyjson.com/products/${productId}`);
+                let product = await response.json();
+
+                let list = document.querySelector('.details');
+
+                list.innerHTML = /*html*/`
+                
+                    <div class="post">
+                    <img class="img" src="${product.thumbnail}" width="400" alt="${product.title}">
+                    <div class="text">
+                        <h4>${product.title}</h4>
+                        <p>${product.description}</p> <!-- Использовал <p> для описания -->
+                        <h4>Процент скидки: ${product.discountPercentage}%</h4>
+                        <h4>Рейтинг: ${product.rating}⋇</h4>
+                        <h5>Цена: ${product.price} $</h5>
+                    </div>
+                </div>
+                `;
+            
+        }
+
+        getProductDetails();
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "product-relay-server",
+  "version": "1.0.0",
+  "description": "Сервер ретранслятор для DummyJSON API",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "dev": "node server.js Tom 26"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7"
+  }
+}

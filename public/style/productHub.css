@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('/public/font-family/minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    background-color: rgb(70, 70, 70);
+    font-family: 'minecraft', sans-serif;
+    font-size: 13px;
+}
+
+.title {
+    width: 30%;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    margin: 50px 30px 20px 30px;
+}
+
+.img {
+    background-color: rgb(196, 196, 196);
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 400px;
+}
+
+.text {
+    color: rgb(196, 196, 196);
+    font-size: 20px;
+    width: 100%;
+}
